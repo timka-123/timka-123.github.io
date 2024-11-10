@@ -30,15 +30,32 @@ img {
 .container {
     display: flex;
     align-items: center;
+    align-content: center;
+    justify-content: center;
     min-height: 100vh;
     padding: 1.5rem;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
 }
 
 .head {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .head {
+        margin-top: 20px;
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
 }
 
 .head .avatar {
@@ -68,6 +85,62 @@ img {
     margin-top: .8rem;
     display: flex;
     justify-content: space-between;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+/* Card styles */
+.card {
+    background-color: rgb(78, 78, 78);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    flex: 1;
+    padding: 16px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #e1e1e1;
+    margin: 0 0 16px 0;
+    text-align: left;
+    line-height: 1.4;
 }
 
 .links .link {
