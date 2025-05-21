@@ -101,3 +101,11 @@ img {
     height: 1.4rem;
     fill: #c2bebe;
 }
+
+.clickable { 
+    cursor: pointer;
+}
+
+.clickable:hover {
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 25%);
+}
