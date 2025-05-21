@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: roboto, sans-serif;
     font-size: 1rem;
@@ -108,4 +112,90 @@ img {
 
 .clickable:hover {
     box-shadow: 0 0 16px 0 rgba(0, 0, 0, 25%);
+}
+
+.textable {
+    text-decoration: none;
+    color: #c2bebe;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Card styles */
+.card {
+    background-color: rgb(78, 78, 78);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 340px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    flex: 1;
+    padding: 16px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 8px 0;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #e1e1e1;
+    margin: 0 0 16px 0;
+    text-align: left;
+    line-height: 1.4;
+}
+
+.button {
+  background-color: #516abe;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: auto;
+}
+
+.button:hover {
+    background-color: #3e5f9b;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  fill: white;
 }
