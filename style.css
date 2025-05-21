@@ -119,6 +119,10 @@ img {
     color: #c2bebe;
 }
 
+.projects {
+    margin-bottom: 40px;
+}
+
 /* Card Container */
 .card-container {
     display: flex;
