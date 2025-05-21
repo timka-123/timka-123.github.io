@@ -120,6 +120,7 @@ img {
 }
 
 .projects {
+    margin-top: 42px;
     margin-bottom: 40px;
 }
 
@@ -129,7 +130,7 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     gap: 60px;
-    margin-top: 40px;
+    margin-top: 52px;
     margin-bottom: 40px;
 }
 
